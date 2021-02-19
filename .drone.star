@@ -22,7 +22,7 @@ def main(ctx):
   linux_cxx("TOOLSET=clang CXXSTD=03,11,14,1z Job 5", "clang++", packages="", buildtype="boost", buildscript="drone", image=linuxglobalimage, environment={'TOOLSET': 'clang', 'CXXSTD': '03,11,14,1z', 'TRAVIS_COMPILER': 'clang++', 'DRONE_JOB_UUID': 'ac3478d69a'}, globalenv=globalenv),
   # Not building  #
   #  linux_cxx("TOOLSET=clang CXXSTD=03,11,14,1z Job 6", "clang++", packages="libc++-dev", buildtype="boost", buildscript="drone", image=linuxglobalimage, environment={'TOOLSET': 'clang', 'CXXSTD': '03,11,14,1z', 'TRAVIS_COMPILER': 'clang++-libc++', 'DRONE_JOB_UUID': 'c1dfd96eea'}, globalenv=globalenv),
-  osx_cxx("TOOLSET=clang CXXSTD=03,11,14,1z Job 7", "clang++", packages="", buildtype="boost", buildscript="drone", environment={'TOOLSET': 'clang', 'CXXSTD': '03,11,14,1z', 'TRAVIS_COMPILER': 'clang++', 'DRONE_JOB_UUID': '902ba3cda1'}, globalenv=globalenv),
+  osx_cxx("TOOLSET=clang CXXSTD=03,11,14,1z Job 7", "clang++", packages="", buildtype="boost", buildscript="drone", xcode_version="10.3", environment={'TOOLSET': 'clang', 'CXXSTD': '03,11,14,1z', 'TRAVIS_COMPILER': 'clang++', 'DRONE_JOB_UUID': '902ba3cda1'}, globalenv=globalenv),
     ]
 
 # from https://github.com/boostorg/boost-ci
